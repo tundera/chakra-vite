@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test:e2e": "cypress open",
+    "test:components": "cypress open-ct"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.5.0",

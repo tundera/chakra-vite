@@ -5,11 +5,7 @@
     "target": "es5",
     "lib": ["es5", "dom"],
     "types": ["node", "cypress", "@testing-library/cypress"],
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@goat/components": ["../../packages/components/src"]
-    }
+    "jsx": "preserve"
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "files": ["support/index.d.ts"]
