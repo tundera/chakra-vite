@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import {
   Box,
@@ -37,9 +37,9 @@ const Navigation: FC<Props> = ({ disclosure }) => {
             Home
           </Button>
         </Link>
-        <Link to="/">
+        <Link to="/features">
           <Button variant="ghost" w="100%">
-            About
+            Features
           </Button>
         </Link>
       </HStack>
@@ -84,9 +84,9 @@ const Navigation: FC<Props> = ({ disclosure }) => {
                 Home
               </Button>
             </Link>
-            <Link to="/about">
+            <Link to="/features">
               <Button variant="ghost" w="100%">
-                About
+                Features
               </Button>
             </Link>
             <DarkModeToggle />

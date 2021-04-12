@@ -1,14 +1,15 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
+import { StrictMode } from 'react'
+
 import ThemeProvider from 'providers/ThemeProvider'
 
 import App from 'App'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <ThemeProvider>
       <App />
     </ThemeProvider>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root'),
 )

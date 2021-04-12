@@ -1,10 +1,19 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import styled from '@emotion/styled'
-import { chakra, Text, Flex, useColorModeValue, useDisclosure } from '@chakra-ui/react'
-import { useNavigate } from 'react-router-dom'
+import {
+  chakra,
+  Text,
+  Flex,
+  useColorModeValue,
+  useDisclosure,
+  HStack,
+  Image,
+} from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 import Navigation from 'components/Navigation'
+import logo from 'assets/logos/vite.svg'
 
 const StickyFlex = styled(chakra.header)`
   position: sticky;
@@ -13,14 +22,8 @@ const StickyFlex = styled(chakra.header)`
 `
 
 const Header: FC = ({ ...props }) => {
-  const navigate = useNavigate()
   const mobileNav = useDisclosure()
   const bg = useColorModeValue('white', 'brand.700')
-  const hoverColor = useColorModeValue('brand.500', 'gray.800')
-
-  const handleClick = () => {
-    navigate('/')
-  }
 
   return (
     <StickyFlex
@@ -39,9 +42,14 @@ const Header: FC = ({ ...props }) => {
       {...props}
     >
       <Flex alignItems="center" justifyContent="space-between" mx="auto">
-        <Text onClick={handleClick} fontSize="xl" fontWeight="bold" _hover={{ color: hoverColor }}>
-          Vite Starter
-        </Text>
+        <Link to="/">
+          <HStack spacing="2" alignItems="center">
+            <Image src={logo} className="App logo" alt="logo" w="10" h="10" />
+            <Text fontSize="xl" fontWeight="bold">
+              Vite Starter
+            </Text>
+          </HStack>
+        </Link>
         <Navigation disclosure={mobileNav} />
       </Flex>
     </StickyFlex>

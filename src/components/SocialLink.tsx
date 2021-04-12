@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react'
+import type { FC, ReactElement } from 'react'
 
 import { IconButton, Link, useColorModeValue } from '@chakra-ui/react'
 

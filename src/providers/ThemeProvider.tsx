@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'

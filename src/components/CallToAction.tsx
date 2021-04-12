@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import { Box, Button, chakra, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
@@ -34,7 +34,7 @@ const CallToAction: FC<Props> = ({ title, subtitle, description }) => {
         </Text>
         <Flex justify="center" mt={{ lg: '0' }} flexShrink={{ lg: 0 }}>
           <Box mt="12" display="inline-flex" rounded="md" shadow="base">
-            <Link to="/about">
+            <Link to="/features">
               <Button
                 href="https://github.com/tundera/chakra-vite/README.md"
                 type="button"

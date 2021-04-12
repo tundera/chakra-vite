@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import { IconButton, Tooltip, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { Moon, Sun } from 'react-feather'

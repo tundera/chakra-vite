@@ -1,5 +1,3 @@
-import React from 'react'
-
 import CallToAction from 'components/CallToAction'
 import MainLayout from 'layouts/MainLayout'
 

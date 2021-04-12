@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import type { FC } from 'react'
 
 import Emoji from 'a11y-react-emoji'
 import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react'
