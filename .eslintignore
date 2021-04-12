@@ -1,0 +1,14 @@
+node_modules
+out
+*.css
+*.log
+**/dist/**
+**/.vercel/**
+
+prettier.config.*
+babel.config.*
+
+/assets
+/patches
+/scripts
+/types
