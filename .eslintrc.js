@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'cypress', 'jest', 'react', 'import'],
+  plugins: ['@typescript-eslint', 'cypress', 'react', 'import'],
   extends: [
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -13,7 +13,6 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    jest: true,
   },
   rules: {
     '@typescript-eslint/no-shadow': 'off',
