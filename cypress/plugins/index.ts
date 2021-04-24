@@ -1,4 +1,4 @@
-const { startDevServer } = require('@cypress/vite-dev-server')
+import { startDevServer } from '@cypress/vite-dev-server'
 
 /// <reference types="cypress" />
 // ***********************************************************
@@ -16,11 +16,8 @@ const { startDevServer } = require('@cypress/vite-dev-server')
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
 
+module.exports = (on, config) => {
   if (config.testingType === 'component') {
     on('dev-server:start', async (options) =>
       startDevServer({

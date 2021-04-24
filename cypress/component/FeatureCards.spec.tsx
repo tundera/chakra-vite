@@ -8,6 +8,8 @@ describe('FeatureCards', () => {
   })
 
   it('Has all card headings', () => {
+    mount(<FeatureCards />)
+
     cy.findByText('Vite')
     cy.findByText('TypeScript')
     cy.findByText('Cypress')

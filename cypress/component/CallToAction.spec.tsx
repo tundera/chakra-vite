@@ -8,6 +8,8 @@ describe('CallToAction', () => {
   })
 
   it('findByText', () => {
+    mount(<CallToAction title="Title" subtitle="Subtitle" description="Description" />)
+
     cy.findByText('Learn more')
   })
 })
