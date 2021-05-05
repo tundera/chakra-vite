@@ -1,6 +1,6 @@
 import { mount } from '@cypress/react'
 
-import CallToAction from 'components/CallToAction'
+import CallToAction from 'blocks/CallToAction'
 
 describe('CallToAction', () => {
   it('works', () => {

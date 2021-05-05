@@ -1,6 +1,6 @@
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { Flex, Heading } from '@chakra-ui/layout'
-import FeatureCards from 'components/FeatureCards'
+import FeatureCards from 'blocks/FeatureCards'
 import MainLayout from 'layouts/MainLayout'
 
 function Features() {

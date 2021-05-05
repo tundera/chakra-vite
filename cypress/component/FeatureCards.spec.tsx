@@ -1,6 +1,6 @@
 import { mount } from '@cypress/react'
 
-import FeatureCards from 'components/FeatureCards'
+import FeatureCards from 'blocks/FeatureCards'
 
 describe('FeatureCards', () => {
   it('works', () => {

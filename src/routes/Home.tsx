@@ -1,5 +1,5 @@
-import CallToAction from 'components/CallToAction'
 import MainLayout from 'layouts/MainLayout'
+import CallToAction from 'blocks/CallToAction'
 
 function Home() {
   return (

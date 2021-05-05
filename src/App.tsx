@@ -1,7 +1,7 @@
+import { lazy } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Home from 'routes/Home'
-import Features from 'routes/Features'
+import Features from 'routes/Home'
 
 function App() {
   return (
